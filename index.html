@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shriyash Jagtap | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#home" class="logo">
+          <span class="logo-text">Shriyash</span> Jagtap
+        </a>
+        
+        <div class="header-right">
+          <!-- Theme Toggle -->
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-toggle-track">
+              <span class="theme-toggle-thumb">
+                <i class="fa-solid fa-sun sun-icon"></i>
+                <i class="fa-solid fa-moon moon-icon"></i>
+              </span>
+            </span>
+          </button>
+          
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="mobile-menu-button" aria-label="Open mobile menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          
+          <!-- Desktop Navigation -->
+          <nav class="desktop-nav">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu-header">
+      <button id="close-mobile-menu" class="close-mobile-menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Side Navigation Dots -->
+  <div class="side-nav">
+    <a href="#home" class="nav-dot active" aria-label="Navigate to Home section"></a>
+    <a href="#about" class="nav-dot" aria-label="Navigate to About section"></a>
+    <a href="#experience" class="nav-dot" aria-label="Navigate to Experience section"></a>
+    <a href="#skills" class="nav-dot" aria-label="Navigate to Skills section"></a>
+    <a href="#projects" class="nav-dot" aria-label="Navigate to Projects section"></a>
+    <a href="#contact" class="nav-dot" aria-label="Navigate to Contact section"></a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+      <!-- Particles background -->
+      <canvas id="particles-canvas" class="particles-canvas"></canvas>
+      
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Shriyash Jagtap</h1>
+            <h2 class="hero-title">
+              <span id="typed-text">Web Developer</span><span class="typed-cursor">|</span>
+            </h2>
+            <p class="hero-description">
+              A passionate MCA student with a CGPA of 7.26, specializing in creating beautiful, responsive web applications with clean code and exceptional user experiences.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">
+                Contact Me <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                View Projects
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-image-wrapper">
+              <div class="profile-image-inner">
+                <img 
+                  src="assets/port2.jpg" 
+                  alt="Shriyash Jagtap" 
+                  class="profile-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <a href="#about" aria-label="Scroll down">
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="about-content">
+          <div class="education-card">
+            <div class="card">
+              <h3 class="card-title">Education</h3>
+              <div class="education-list">
+                <div class="education-item">
+                  <h4 class="education-degree">Master of Computer Applications (MCA)</h4>
+                  <p class="education-gpa">Maharashtra Institute Of Technology(Chh.Sambhajinagar)</p>
+                  <p class="education-gpa">Current CGPA: 7.26</p>
+                  <p class="education-year">2023 - Present</p>
+                </div>
+                <div class="education-item secondary">
+                  <h4 class="education-degree">Bachelor's Of Commerce (B.com)</h4>
+                  <p class="education-gpa">Raje Shahaji College of Arts,Commerce and Science</p>
+                  <p class="education-gpa">CGPA: 7.69</p>
+                  <p class="education-year">2019 - 2021</p>
+                </div>
+                <div class="education-item secondary">
+                  <h4 class="education-degree">12<sup>th</sup>Class(SSC)</h4>
+                  <p class="education-gpa">Percentage: 66.92%</p>
+                  <p class="education-year">Feb-2019</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-info-card">
+            <div class="card">
+              <h3 class="card-title">Who I Am</h3>
+              <div class="about-info">
+                <p>
+                  I'm a dedicated web developer pursuing my Master's in Computer Applications, passionate about creating digital experiences that are both functional and beautiful. My journey in web development started during my undergraduate studies and has evolved through both academic projects and professional experiences.
+                </p>
+                <p>
+                  I specialize in full-stack development with a focus on creating responsive, user-friendly interfaces. My experience spans from designing intuitive UIs to implementing backend functionality that powers seamless user experiences.
+                </p>
+                <p>
+                  Currently, I'm expanding my skills while working as a Web Developer at Unoiatech, where I contribute to building modern web applications with the latest technologies. I'm constantly learning new techniques and tools to enhance my development capabilities and create better digital solutions.
+                </p>
+                
+                <div class="personality-tags">
+                  <span class="tag">Problem Solver</span>
+                  <span class="tag">Fast Learner</span>
+                  <span class="tag">Detail-Oriented</span>
+                  <span class="tag">Team Player</span>
+                  <span class="tag">Creative Thinker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="particle-bg"></div>
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Work Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="experience-wrapper">
+          <div class="experience-years-bar">
+            <div class="experience-years">
+              <div class="year-marker current">
+                <span class="year">Present</span>
+                <div class="year-dot"></div>
+              </div>
+              <div class="year-marker">
+                <span class="year">2023</span>
+                <div class="year-dot"></div>
+              </div>
+              <div class="year-marker">
+                <span class="year">2022</span>
+                <div class="year-dot"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <!-- Current Job -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-logo">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-building"></i>
+                  </div>
+                </div>
+                <div class="timeline-info">
+                  <div class="timeline-header">
+                    <h3 class="timeline-title">Web Developer</h3>
+                    <span class="timeline-date">Present</span>
+                  </div>
+                  <h4 class="timeline-company">Unoiatech</h4>
+                  <p class="timeline-description">
+                    Working on modern web application development using the latest frontend and backend technologies to create responsive and user-friendly digital experiences.
+                  </p>
+                  <div class="timeline-achievements">
+                    <div class="achievement-item">
+                      <i class="fa-solid fa-check-circle"></i>
+                      <span>Developed responsive web interfaces for 5+ client projects</span>
+                    </div>
+                    <div class="achievement-item">
+                      <i class="fa-solid fa-check-circle"></i>
+                      <span>Implemented optimized front-end solutions using React</span>
+                    </div>
+                    <div class="achievement-item">
+                      <i class="fa-solid fa-check-circle"></i>
+                      <span>Collaborated with design team to implement UI/UX improvements</span>
+                    </div>
+                  </div>
+                  <div class="timeline-tags">
+                    <span class="tag-primary">HTML5</span>
+                    <span class="tag-primary">CSS3</span>
+                    <span class="tag-primary">JavaScript</span>
+                    <span class="tag-primary">React</span>
+                    <span class="tag-primary">Node.js</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Previous Internship -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="timeline-marker secondary"></div>
+              <div class="timeline-content">
+                <div class="timeline-logo">
+                  <div class="company-logo secondary">
+                    <i class="fa-solid fa-laptop-code"></i>
+                  </div>
+                </div>
+                <div class="timeline-info">
+                  <div class="timeline-header">
+                    <h3 class="timeline-title">Web Developer Intern</h3>
+                    <span class="timeline-date">2022</span>
+                  </div>
+                  <h4 class="timeline-company">Salvoron Technologies</h4>
+                  <p class="timeline-description">
+                    Developed and maintained client websites, implemented responsive designs, and collaborated with the design team to create visually appealing interfaces.
+                  </p>
+                  <div class="timeline-achievements">
+                    <div class="achievement-item">
+                      <i class="fa-solid fa-check-circle"></i>
+                      <span>Built and maintained WordPress sites for small businesses</span>
+                    </div>
+                    <div class="achievement-item">
+                      <i class="fa-solid fa-check-circle"></i>
+                      <span>Designed responsive layouts that improved mobile traffic by 30%</span>
+                    </div>
+                    <div class="achievement-item">
+                      <i class="fa-solid fa-check-circle"></i>
+                      <span>Created custom CSS animations to enhance user experience</span>
+                    </div>
+                  </div>
+                  <div class="timeline-tags">
+                    <span class="tag-secondary">HTML5</span>
+                    <span class="tag-secondary">CSS3</span>
+                    <span class="tag-secondary">JavaScript</span>
+                    <span class="tag-secondary">WordPress</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="experience-cta" data-aos="fade-up" data-aos-delay="300">
+          <a href="#contact" class="btn btn-primary">
+            Let's Work Together <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/1b7Bo06hjjc8phKeGTmfOFYkedtxaJ82a/view?usp=sharing" class="btn btn-primary">
+            Download CV <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="card">
+              <h3 class="card-title">Frontend Development</h3>
+              
+              <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">HTML5 & CSS3</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-progress="90"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-progress="85"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">React.js</span>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-progress="80"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Responsive Design</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-progress="90"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">UI/UX Principles</span>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-progress="75"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="card">
+              <h3 class="card-title">Backend & Tools</h3>
+              
+              <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Node.js</span>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill secondary" data-progress="75"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Database (MySQL, MongoDB)</span>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill secondary" data-progress="70"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Git & Version Control</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill secondary" data-progress="85"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">RESTful APIs</span>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill secondary" data-progress="80"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">DevOps Basics</span>
+                    <span class="skill-percentage">65%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill secondary" data-progress="65"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tech-stack">
+          <div class="card">
+            <h3 class="card-title">Technology Stack</h3>
+            
+            <div class="tech-icons">
+              <div class="tech-icon">
+                <div class="tech-icon-box">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <span class="tech-name">HTML5</span>
+              </div>
+              
+              <div class="tech-icon">
+                <div class="tech-icon-box">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <span class="tech-name">CSS3</span>
+              </div>
+              
+              <div class="tech-icon">
+                <div class="tech-icon-box">
+                  <i class="fa-brands fa-js"></i>
+                </div>
+                <span class="tech-name">JavaScript</span>
+              </div>
+              
+              <div class="tech-icon">
+                <div class="tech-icon-box">
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                <span class="tech-name">React</span>
+              </div>
+              
+              <div class="tech-icon">
+                <div class="tech-icon-box">
+                  <i class="fa-brands fa-node-js"></i>
+                </div>
+                <span class="tech-name">Node.js</span>
+              </div>
+              
+              <div class="tech-icon">
+                <div class="tech-icon-box">
+                  <i class="fa-brands fa-git-alt"></i>
+                </div>
+                <span class="tech-name">Git</span>
+              </div>
+              
+              <div class="tech-icon">
+                <div class="tech-icon-box">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <span class="tech-name">Databases</span>
+              </div>
+              
+              <div class="tech-icon">
+                <div class="tech-icon-box">
+                  <i class="fa-brands fa-wordpress"></i>
+                </div>
+                <span class="tech-name">WordPress</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- project section -->
+<!-- Projects Section -->
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">My Projects</h2>
+      <div class="section-divider"></div>
+      <p class="section-description">
+        A selection of my recent work, showcasing my skills in web development and design.
+      </p>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img 
+            src="https://images.unsplash.com/photo-1547658719-da2b51169166?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8d2Vic2l0ZSxlY29tbWVyY2V8fHx8fHwxNjk1NTEwNzAz&ixlib=rb-4.0.3&q=80&w=500" 
+            alt="E-commerce Project" 
+          />
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Ai Assistant</h3>
+          <p class="project-description">
+            A fully responsive e-commerce platform with product catalog, cart functionality, and secure checkout process.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Node.js</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link primary">View Demo</a>
+            <a href="#" class="project-link secondary">
+              <i class="fa-brands fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img 
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZGFzaGJvYXJkLHdlYixhcHB8fHx8fHwxNjk1NTEwNzU0&ixlib=rb-4.0.3&q=80&w=500" 
+            alt="Dashboard Project" 
+          />
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Professional Portfoliao Site</h3>
+          <p class="project-description">
+            A comprehensive admin dashboard with data visualization, user management, and real-time analytics.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <!-- <span class="project-tag">Chart.js</span> -->
+            <span class="project-tag">Tailwind CSS</span>
+            <span class="project-tag">Postgress DB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link primary">View Demo</a>
+            <a href="#" class="project-link secondary">
+              <i class="fa-brands fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img 
+            src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8d2ViLGFwcCxtb2JpbGV8fHx8fHwxNjk1NTEwODAz&ixlib=rb-4.0.3&q=80&w=500" 
+            alt="Weather App Project" 
+          />
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Library Management System</h3>
+          <p class="project-description">
+            A sleek, responsive weather application with 7-day forecasts, location detection, and interactive maps.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">API Integration</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">MySql</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link primary">View Demo</a>
+            <a href="#" class="project-link secondary">
+              <i class="fa-brands fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="projects-cta">
+      <a href="#" class="btn btn-primary">
+        View All Projects <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Feel free to reach out for collaborations or just a friendly hello.
+          </p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="card">
+              <h3 class="card-title">Contact Information</h3>
+              
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4 class="contact-label">Email</h4>
+                    <a href="mailto:shriyash@example.com" class="contact-value">jagtapshriyash1@gmail.com</a>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4 class="contact-label">Phone</h4>
+                    <a href="tel:+919579774265" class="contact-value">+91 9579774265</a>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4 class="contact-label">Location</h4>
+                    <p class="contact-value">Pune, Maharashtra, India</p>
+                  </div>
+                </div>
+              </div>
+              
+              <h3 class="card-title social-title">Follow Me</h3>
+              
+              <div class="social-links">
+                <a href="https://linkedin.com/in/shriyash-jagtap-6ba1a4288" class="social-link" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/ShriyashAngadJagtap" class="social-link" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://x.com/ShriyashJa30190" class="social-link" aria-label="Twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/shriyash_jagtap_/" class="social-link" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <div class="card">
+              <h3 class="card-title">Send Me a Message</h3>
+              
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" id="subject" name="subject" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-full">
+                    Send Message <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3 class="footer-title">Shriyash Jagtap</h3>
+          <p class="footer-subtitle">Web Developer | MCA Student</p>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/shriyash-jagtap-6ba1a4288" class="footer-social-link" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/ShriyashAngadJagtap" class="footer-social-link" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://x.com/ShriyashJa30190" class="footer-social-link" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/shriyash_jagtap_/" class="footer-social-link" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Shriyash Jagtap. All rights reserved.</p>
+        
+        <div class="footer-links">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="particles.js"></script>
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize AOS animations
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 50
+      });
+    });
+  </script>
+</body>
+</html>
+
