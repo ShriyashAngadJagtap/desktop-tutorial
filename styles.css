@@ -77,6 +77,45 @@
   --secondary: var(--secondary-dark);
 }
 
+/* Mobile Responsiveness Starts */
+
+/* Mobile fixes for timeline section */
+/* Mobile fixes for timeline section */
+@media (max-width: 767px) {
+  /* Timeline marker size */
+  .timeline-marker {
+    left: -1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  /* Smaller icon in marker */
+  .timeline-marker::before {
+    font-size: var(--text-xs);
+  }
+  
+  /* Timeline content layout */
+  .timeline-content {
+    flex-direction: column;
+  }
+  
+  /* Company logo adjustments */
+  .timeline-logo {
+    margin-bottom: var(--space-sm);
+  }
+  
+  .company-logo {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+  
+  /* Timeline info spacing */
+  .timeline-info {
+    padding: 0;
+  }
+}
+/* Mobile Responsiveness Ends */
 /* Reset and base styles */
 * {
   margin: 0;
