@@ -195,28 +195,38 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Contact form submission handling
   const contactForm = document.getElementById('contact-form');
-  
-  contactForm.addEventListener('submit', function(e) {
+
+  contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    
+  
+    const formData = new FormData(contactForm);
     const submitButton = contactForm.querySelector('button[type="submit"]');
     const originalButtonText = submitButton.innerHTML;
-    
-    // Disable button and show loading state
+  
+    // Disable button and show loading
     submitButton.disabled = true;
     submitButton.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Sending...';
-    
-    // Simulate form submission (in a real app, you'd send data to a server here)
-    setTimeout(() => {
-      // Show success message
-      alert('Message sent successfully!');
-      
-      // Reset form
-      contactForm.reset();
-      
-      // Restore button
-      submitButton.disabled = false;
-      submitButton.innerHTML = originalButtonText;
-    }, 1500);
-  });
+  
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          alert("Message sent successfully!");
+          contactForm.reset();
+        } else {
+          alert("Something went wrong. Please try again.");
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert("Error sending message.");
+      })
+      .finally(() => {
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalButtonText;
+      });
+  });  
 });
