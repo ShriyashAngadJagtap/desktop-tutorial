@@ -198,11 +198,17 @@
                 <div class="year-dot"></div>
               </div>
               <div class="year-marker">
+                <span class="year">2023</span>
+                <div class="year-dot"></div>
+              </div>
+              <!-- Third Year Starts -->
+              <div class="year-marker">
                 <span class="year">2025</span>
                 <div class="year-dot"></div>
               </div>
+               <!-- Third Year ends here -->
               <div class="year-marker">
-                <span class="year">2025</span>
+                <span class="year">2022</span>
                 <div class="year-dot"></div>
               </div>
             </div>
@@ -266,7 +272,7 @@
                 <div class="timeline-info">
                   <div class="timeline-header">
                     <h3 class="timeline-title">Web Developer Intern</h3>
-                    <span class="timeline-date">2022</span>
+                    <span class="timeline-date">2025</span>
                   </div>
                   <h4 class="timeline-company">Salvoron Technologies</h4>
                   <p class="timeline-description">
@@ -295,8 +301,52 @@
                 </div>
               </div>
             </div>
+            <!-- Third Job -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-marker secondary"></div>
+          <div class="timeline-content">
+            <div class="timeline-logo">
+              <div class="company-logo secondary">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+            </div>
+            <div class="timeline-info">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Software Developer</h3>
+                <span class="timeline-date">2025</span>
+              </div>
+              <h4 class="timeline-company">Google</h4>
+              <p class="timeline-description">
+                Developed and maintained client websites, implemented responsive designs, and collaborated with the design team to create visually appealing interfaces.
+              </p>
+              <div class="timeline-achievements">
+                <div class="achievement-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Built and maintained WordPress sites for small businesses</span>
+                </div>
+                <div class="achievement-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Designed responsive layouts that improved mobile traffic by 30%</span>
+                </div>
+                <div class="achievement-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Created custom CSS animations to enhance user experience</span>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag-secondary">HTML5</span>
+                <span class="tag-secondary">CSS3</span>
+                <span class="tag-secondary">JavaScript</span>
+                <span class="tag-secondary">WordPress</span>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- Third Job Ends Here -->
+          </div>
+        </div>
+
+        
         
         <div class="experience-cta" data-aos="fade-up" data-aos-delay="300">
           <a href="#contact" class="btn btn-primary">
@@ -676,32 +726,36 @@
               </div>
             </div>
           </div>
-          
+          <!-- Email Text Field -->
           <div class="contact-form-container">
             <div class="card">
               <h3 class="card-title">Send Me a Message</h3>
-              
-              <form id="contact-form" class="contact-form">
+          
+              <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="contact-form">
+                
+                <!-- Access Key for Web3Forms -->
+                <input type="hidden" name="access_key" value="41ab0bf7-3d99-4ec2-93ed-9933e7037196">
+          
                 <div class="form-group">
                   <label for="name" class="form-label">Name</label>
                   <input type="text" id="name" name="name" class="form-control" required>
                 </div>
-                
+          
                 <div class="form-group">
                   <label for="email" class="form-label">Email</label>
                   <input type="email" id="email" name="email" class="form-control" required>
                 </div>
-                
+          
                 <div class="form-group">
                   <label for="subject" class="form-label">Subject</label>
                   <input type="text" id="subject" name="subject" class="form-control" required>
                 </div>
-                
+          
                 <div class="form-group">
                   <label for="message" class="form-label">Message</label>
                   <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
                 </div>
-                
+          
                 <div class="form-group">
                   <button type="submit" class="btn btn-primary btn-full">
                     Send Message <i class="fa-solid fa-paper-plane"></i>
@@ -710,6 +764,8 @@
               </form>
             </div>
           </div>
+          
+          <!-- Email Text field Ends Here -->
         </div>
       </div>
     </section>
