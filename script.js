@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   };
   
-  // Initialize animations
+  // Initialize animations 
   animateElements();
   
   // Contact form submission handling
