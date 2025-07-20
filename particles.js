@@ -24,7 +24,7 @@ class Particles {
       ],
       ...options
     };
-
+// main part particles related
     this.canvas = document.querySelector(this.options.selector);
     this.ctx = this.canvas?.getContext('2d');
     this.particles = [];
