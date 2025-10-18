@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Typing effect for hero section
   const typedTextElement = document.getElementById('typed-text');
-  const textArray = ['Web Developer', 'Software Tester (Manual)', 'UI/UX Enthusiast'];
+  const textArray = ['MERN Full Stack Developer', ];
   let textIndex = 0;
   let charIndex = 0;
   
