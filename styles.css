@@ -1348,7 +1348,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-title {
-  font-size: var(--text-x);
+  font-size: var(--text-xl);
   font-weight: 600;
   margin-bottom: var(--space-sm);
   color: var(--text-primary);
