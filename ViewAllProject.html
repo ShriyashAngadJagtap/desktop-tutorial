@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shriyash Jagtap | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- Header -->
   <header id="header">
     <div class="container">
       <div class="header-content">
-        <a href="#home" class="logo">
+        <a href="index.html" class="logo">
           <span class="logo-text">Shriyash</span> Jagtap
         </a>
-        
+
         <div class="header-right">
           <!-- Theme Toggle -->
           <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
@@ -29,12 +33,12 @@
               </span>
             </span>
           </button>
-          
+
           <!-- Mobile Menu Button -->
           <button id="mobile-menu-button" class="mobile-menu-button" aria-label="Open mobile menu">
             <i class="fa-solid fa-bars"></i>
           </button>
-          
+
           <!-- Desktop Navigation -->
           <nav class="desktop-nav">
             <a href="index.html" class="nav-link active">Home</a>
@@ -73,156 +77,189 @@
     <a href="#projects" class="nav-dot" aria-label="Navigate to Projects section"></a>
     <a href="#contact" class="nav-dot" aria-label="Navigate to Contact section"></a>
   </div>
-<div style="margin-top: 60px;">
-  
-</div>
+  <div style="margin-top: 60px;">
+
+  </div>
   <main>
 
-<!-- Project Section Starts Here -->
-<canvas id="particles-canvas" class="particles-canvas"></canvas>
-<section id="projects" class="">
-  <div class="container">
-    <div class="section-header" style="margin-top: 100px; ">
-      <h2 class="section-title">All Projects</h2>
-      <div class="section-divider"></div>
-      <p class="section-description">
-        Here's a broader collection of my work, showcasing my journey through various technologies and problem domains.
-      </p>
-    </div>
-    
-    <div class="projects-grid">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img 
-            src="assets/AI.jpg" 
-            alt="AI Assistant Home Page" 
-          />
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">Ai Assistant</h3>
-          <p class="project-description">
-            A fully functional AI Assistant which you can give her a basic command like open softwares search on Youtube and another platform Volume control etc
+    <!-- Project Section Starts Here -->
+    <canvas id="particles-canvas" class="particles-canvas"></canvas>
+    <section id="projects" class="">
+      <div class="container">
+        <div class="section-header" style="margin-top: 100px; ">
+          <h2 class="section-title">All Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Here's a broader collection of my work, showcasing my journey through various technologies and problem
+            domains.
           </p>
-          <div class="project-tags">
-            <span class="project-tag">Speech_Recognition</span>
-            <span class="project-tag">Pyautogui</span>
-            <span class="project-tag">Tkinter</span>
-            <span class="project-tag">NLP</span>
-            <span class="project-tag">Web Browser</span>
-            <span class="project-tag">OS</span>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/AI.jpg" alt="AI Assistant Home Page" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Ai Assistant</h3>
+              <p class="project-description">
+                A fully functional AI Assistant which you can give her a basic command like open softwares search on
+                Youtube and another platform Volume control etc
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Speech_Recognition</span>
+                <span class="project-tag">Pyautogui</span>
+                <span class="project-tag">Tkinter</span>
+                <span class="project-tag">NLP</span>
+                <span class="project-tag">Web Browser</span>
+                <span class="project-tag">OS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://drive.google.com/file/d/1XGmrQiLwqKxRaQeOCD_lpSw8Q_PxK0rr/view?usp=sharing"
+                  target="_blank" class="project-link primary">View Demo</a>
+                <a href="https://github.com/ShriyashAngadJagtap/AI-Assistant" class="project-link secondary"
+                  target="_blank">
+                  <i class="fa-brands fa-github" target="_blank"></i> Source Code
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://drive.google.com/file/d/1XGmrQiLwqKxRaQeOCD_lpSw8Q_PxK0rr/view?usp=sharing" target="_blank" class="project-link primary">View Demo</a>
-            <a href="https://github.com/ShriyashAngadJagtap/AI-Assistant" class="project-link secondary"target="_blank">
-              <i class="fa-brands fa-github"target="_blank"></i> Source Code
-            </a>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/quickshow.png" alt="QuickShow Home Page" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Movie Ticket Booking - (MERN)</h3>
+              <p class="project-description">
+                A fully functional Movie Ticket Booking App where users can easily search movies, check showtimes, book
+                tickets, and manage bookings using MERN Stack.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">Express.js</span>
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://quickshow-client-pkkdhlye0-shriyash-jagtaps-projects-e6ceb366.vercel.app/"
+                  target="_blank" class="project-link primary">View Demo</a>
+                <a href="https://github.com/ShriyashAngadJagtap/QuickShow-deploy" class="project-link secondary"
+                  target="_blank">
+                  <i class="fa-brands fa-github" target="_blank"></i> Source Code
+                </a>
+              </div>
+            </div>
           </div>
+          <!-- Project 2 cart end here-->
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/download.png" alt="GreenMart-project" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">GreenMart Grocery Management</h3>
+              <p class="project-description">
+                Developed and successfully deployed this project. It is full-stack grocery management system —
+                GreenMart, built using the MERN
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">Express.js</span>
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://greencart-deploy-ftz6.vercel.app/" target="_blank" class="project-link primary">View
+                  Demo</a>
+                <a href="https://github.com/ShriyashAngadJagtap/greencart-deploy" target="_blank"
+                  class="project-link secondary">
+                  <i class="fa-brands fa-github" target="_blank"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Project 4  -->
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/Growth.png" alt="GreenMart-project" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Growth Inbound</h3>
+              <p class="project-description">
+                Developed and successfully deployed this project. It is full-stack Hospital Landing Page — Growth
+                Inbound, built using the Wordpress AI API for intelligent hospital
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Wordpress</span>
+                <span class="project-tag">Elementore Pro</span>
+                <span class="project-tag">SEO</span>
+              </div>
+              <div class="project-links">
+                <a href="https://growthinbound.com/" target="_blank" class="project-link primary">View Demo</a>
+                <a href="" target="_blank" class="project-link secondary">
+                  <i class="fa-brands fa-github" target="_blank"></i> Source Code
+                </a>
+              </div>
+            </div>
+
+
+
+
+            <!--Shriyash Alway new card if you want to with in this div only otherwise it will cause an mess   -->
+          </div>
+
+
+          <!-- Shriyash Alway new card if you want to above this div only otherwise it will cause an mess -->
+          <!--Project 5  -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/AI-Resume.png" alt="GreenMart-project" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">AI Resume Builder (MERN)</h3>
+              <p class="project-description">
+                Developed and successfully deployed a Full-Stack AI Resume Builder web application,integrated with
+                Gemini AI.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">Express.js</span>
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://ai-powered-resume-builder-deploye-u.vercel.app/" target="_blank"
+                  class="project-link primary">View Demo</a>
+                <a href="https://github.com/ShriyashAngadJagtap/Ai-Powered-resume-builder-deploye" target="_blank"
+                  class="project-link secondary">
+                  <i class="fa-brands fa-github" target="_blank"></i> Source Code
+                </a>
+              </div>
+            </div>
+            <!--Shriyash Alway new card if you want to with in this div only otherwise it will cause an mess   -->
+          </div>
+        </div>
+
+
+        <div class="projects-cta">
+          <a href="index.html" class="btn btn-primary">
+            Back to Home <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <div style="margin-top: 50px; "></div>
         </div>
       </div>
-      
-      <!-- Project 2 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img 
-            src="assets/quickshow.png"
-            alt="QuickShow Home Page" 
-          />
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">Movie Ticket Booking - (MERN)</h3>
-          <p class="project-description">
-            A fully functional Movie Ticket Booking App where users can easily search movies, check showtimes, book tickets, and manage bookings using MERN Stack.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">MongoDB</span>
-            <span class="project-tag">Express.js</span>
-            <span class="project-tag">React.js</span>
-            <span class="project-tag">Node.js</span>
-            <span class="project-tag">Tailwind CSS</span>
-          </div>
-          <div class="project-links">
-            <a href="https://quickshow-client-pkkdhlye0-shriyash-jagtaps-projects-e6ceb366.vercel.app/" target="_blank" class="project-link primary">View Demo</a>
-            <a href="https://github.com/ShriyashAngadJagtap/QuickShow-deploy" class="project-link secondary"target="_blank">
-              <i class="fa-brands fa-github"target="_blank"></i> Source Code
-            </a>
-          </div>
-        </div>
-      </div>
-      
-
-      <!-- Project 3 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img 
-            src="assets/download.png" 
-            alt="GreenMart-project" 
-          />
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">GreenMart Grocery Management</h3>
-          <p class="project-description">
-            Developed and successfully deployed this project. It is full-stack grocery management system — GreenMart, built using the MERN
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">MongoDB</span>
-            <span class="project-tag">Express.js</span>
-            <span class="project-tag">React.js</span>
-            <span class="project-tag">Node.js</span>
-            <span class="project-tag">Tailwind CSS</span>
-          </div>
-          <div class="project-links">
-            <a href="https://greencart-deploy-ftz6.vercel.app/"target="_blank" class="project-link primary">View Demo</a>
-            <a href="https://github.com/ShriyashAngadJagtap/greencart-deploy"target="_blank" class="project-link secondary">
-              <i class="fa-brands fa-github" target="_blank"></i> Source Code
-            </a>
-          </div>
-        </div>
-      </div> 
-
-
-                      <!--Project 4  -->
-
-            <div class="project-card">
-        <div class="project-image">
-          <img 
-            src="assets/Growth.png" 
-            alt="GreenMart-project" 
-          />
-        </div>
-          <div class="project-info">
-          <h3 class="project-title">Growth Inbound</h3>
-          <p class="project-description">
-            Developed and successfully deployed this project. It is full-stack Hospital Landing Page — Growth Inbound, built using the Wordpress
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">Wordpress</span>
-            <span class="project-tag">Elementore Pro</span>
-            <span class="project-tag">SEO</span>
-          </div>
-          <div class="project-links">
-            <a href="https://growthinbound.com/"target="_blank" class="project-link primary">View Demo</a>
-            <a href=""target="_blank" class="project-link secondary">
-              <i class="fa-brands fa-github" target="_blank"></i> Source Code
-            </a>
-          </div>
-        </div>
-              <!--Shriyash Alway new card if you want to with in this div only otherwise it will cause an mess   -->
-            </div <!--Shriyash Alway new card if you want to above this div only otherwise it will cause an mess   -->
-
-      
-    </div>
-
-    
-    <div class="projects-cta">
-      <a href="index.html" class="btn btn-primary">
-        Back to Home <i class="fa-solid fa-arrow-right"></i>
-      </a>
-      <div style="margin-top: 50px; "></div>
-    </div>
-  </div>
-</section>
-<!-- Project Section Ends Here -->
+    </section>
+    <!-- Project Section Ends Here -->
 
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
@@ -234,12 +271,12 @@
             Feel free to reach out for collaborations or just a friendly hello.
           </p>
         </div>
-        
+
         <div class="contact-grid">
           <div class="contact-info">
             <div class="card">
               <h3 class="card-title">Contact Information</h3>
-              
+
               <div class="contact-details">
                 <div class="contact-item">
                   <div class="contact-icon">
@@ -247,11 +284,12 @@
                   </div>
                   <div class="contact-text">
                     <h4 class="contact-label">Email</h4>
-                    <a class="text-xs"href="mailto: shriyash.jagtap@outlook.com" class="contact-value">shriyash.jagtap@outlook.com
-                  </a>
+                    <a class="text-xs" href="mailto: shriyash.jagtap@outlook.com"
+                      class="contact-value">shriyash.jagtap@outlook.com
+                    </a>
                   </div>
                 </div>
-                
+
                 <div class="contact-item">
                   <div class="contact-icon">
                     <i class="fa-solid fa-phone"></i>
@@ -261,7 +299,7 @@
                     <a href="tel:+919579774265" class="contact-value">+91 9579774265</a>
                   </div>
                 </div>
-                
+
                 <div class="contact-item">
                   <div class="contact-icon">
                     <i class="fa-solid fa-location-dot"></i>
@@ -272,20 +310,23 @@
                   </div>
                 </div>
               </div>
-              
+
               <h3 class="card-title social-title">Follow Me</h3>
-              
+
               <div class="social-links">
-                <a href="https://linkedin.com/in/shriyash-jagtap-6ba1a4288" target="_blank" class="social-link" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/shriyash-jagtap-6ba1a4288" target="_blank" class="social-link"
+                  aria-label="LinkedIn">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/ShriyashAngadJagtap" target="_blank" class="social-link" aria-label="GitHub">
+                <a href="https://github.com/ShriyashAngadJagtap" target="_blank" class="social-link"
+                  aria-label="GitHub">
                   <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="https://x.com/ShriyashJa30190" target="_blank" class="social-link" aria-label="Twitter">
                   <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a href="https://www.instagram.com/shriyash_jagtap_/" target="_blank" class="social-link" aria-label="Instagram">
+                <a href="https://www.instagram.com/shriyash_jagtap_/" target="_blank" class="social-link"
+                  aria-label="Instagram">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </div>
@@ -295,32 +336,32 @@
           <div class="contact-form-container">
             <div class="card">
               <h3 class="card-title">Send Me a Message</h3>
-          
+
               <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="contact-form">
-                
+
                 <!-- Access Key for Web3Forms -->
                 <input type="hidden" name="access_key" value="5a3cd0ad-49df-44ec-bb7b-b1fcd19bb996">
-          
+
                 <div class="form-group">
                   <label for="name" class="form-label">Name</label>
                   <input type="text" id="name" name="name" class="form-control" required>
                 </div>
-          
+
                 <div class="form-group">
                   <label for="email" class="form-label">Email</label>
                   <input type="email" id="email" name="email" class="form-control" required>
                 </div>
-          
+
                 <div class="form-group">
                   <label for="subject" class="form-label">Subject</label>
                   <input type="text" id="subject" name="subject" class="form-control" required>
                 </div>
-          
+
                 <div class="form-group">
                   <label for="message" class="form-label">Message</label>
                   <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
                 </div>
-          
+
                 <div class="form-group">
                   <button type="submit" class="btn btn-primary btn-full">
                     Send Message <i class="fa-solid fa-paper-plane"></i>
@@ -329,7 +370,7 @@
               </form>
             </div>
           </div>
-          
+
           <!-- Email Text field Ends Here -->
         </div>
       </div>
@@ -344,28 +385,32 @@
           <h3 class="footer-title">Shriyash Jagtap</h3>
           <p class="footer-subtitle">Web Developer | MCA Student</p>
         </div>
-        
+
         <div class="footer-social">
-          <a href="https://linkedin.com/in/shriyash-jagtap-6ba1a4288" target="_blank" class="footer-social-link" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/shriyash-jagtap-6ba1a4288" target="_blank" class="footer-social-link"
+            aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/ShriyashAngadJagtap" target="_blank" class="footer-social-link" aria-label="GitHub">
+          <a href="https://github.com/ShriyashAngadJagtap" target="_blank" class="footer-social-link"
+            aria-label="GitHub">
             <i class="fa-brands fa-github"></i>
           </a>
           <a href="https://x.com/ShriyashJa30190" target="_blank" class="footer-social-link" aria-label="X">
             <i class="fa-brands fa-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/shriyash_jagtap_/" target="_blank" class="footer-social-link" aria-label="Instagram">
+          <a href="https://www.instagram.com/shriyash_jagtap_/" target="_blank" class="footer-social-link"
+            aria-label="Instagram">
             <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
         <p class="footer-copyright">© 2025 Shriyash Jagtap. All rights reserved.</p>
-        
+
         <div class="footer-links">
-          <a href="https://drive.google.com/drive/folders/1MHH_4ClgjZvM2v2Ag1r3qMqxdRkyyN1L?usp=sharing" target="_blank" class="footer-link">Documents</a>
+          <a href="https://drive.google.com/drive/folders/1MHH_4ClgjZvM2v2Ag1r3qMqxdRkyyN1L?usp=sharing" target="_blank"
+            class="footer-link">Documents</a>
           <a href="#" class="footer-link">Terms of Service</a>
         </div>
       </div>
@@ -377,7 +422,7 @@
   <!-- AOS Animation Library -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       // Initialize AOS animations
       AOS.init({
         duration: 800,
@@ -389,9 +434,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
